@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Simple QR Extension",
+  "version": "1.0",
+  "description": "Una extensión simple para comenzar.",
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["QR-reader.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
