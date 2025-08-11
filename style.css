@@ -1,0 +1,14 @@
+#qr-selection-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  cursor: crosshair;
+}
+
+.selection-box {
+  position: absolute;
+  border: 2px dashed #fff;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10000;
+}
