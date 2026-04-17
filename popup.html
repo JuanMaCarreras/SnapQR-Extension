@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR</title>
+  <style>
+    body { width: 440px; padding: 12px; font-family: sans-serif; margin: 0; }
+    #container { position: relative; }
+    canvas { border: 1px solid #ccc; width: 100%; display: block; }
+    #overlay {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      cursor: crosshair;
+    }
+    #selection {
+      position: absolute;
+      border: 2px solid #2196F3;
+      background: rgba(33, 150, 243, 0.15);
+      pointer-events: none;
+      display: none;
+    }
+    button { margin-top: 8px; width: 100%; padding: 8px; font-size: 14px; cursor: pointer; }
+    #result { margin-top: 8px; word-break: break-all; font-size: 13px; }
+    #hint { font-size: 12px; color: #888; margin: 6px 0 0; }
+  </style>
 </head>
 <body>
-  <button id="star-scan">
-    Escanear 
-  </button>
+  <h3 style="margin:0 0 8px">SnapQR</h3>
+  <p id="hint" style="display:none">Dibuja un rectángulo sobre el código QR</p>
+  <div id="container">
+    <canvas id="preview" width="400" height="280"></canvas>
+    <div id="overlay"></div>
+    <div id="selection"></div>
+  </div>
+  <div id="result"></div>
 
-  <script src="./popup.js">
-  </script>
+  <script src="jsQR.js"></script>
+  <script src="popup.js"></script>
 </body>
 </html>
