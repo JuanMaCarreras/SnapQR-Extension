@@ -1,3 +1,7 @@
+<div style="text-align: center;">
+  <img src="./icon128.png" alt="SnapQR-Logo" width="600"/>
+</div>
+
 # SnapQR
 > Chrome extension that lets you scan any QR code directly from your screen — no phone needed.
 
