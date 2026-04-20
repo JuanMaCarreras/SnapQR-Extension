@@ -17,7 +17,8 @@
   const selBox = document.createElement('div')
   Object.assign(selBox.style, {
     position: 'fixed',
-    border: '2px solid rgba(255,255,255,0.8)',
+    border: '2px solid rgba(120, 56, 255, 1)',
+    borderRadius: '6px',
     background: 'transparent',
     pointerEvents: 'none',
     display: 'none',
@@ -34,7 +35,7 @@
     background: 'rgba(0,0,0,0.75)',
     color: '#fff',
     padding: '8px 16px',
-    borderRadius: '8px',
+    borderRadius: '50px',
     fontSize: '14px',
     pointerEvents: 'none',
     zIndex: '2147483647',
@@ -214,7 +215,7 @@
       background: '#2196F3',
       color: '#fff',
       border: 'none',
-      borderRadius: '8px',
+      borderRadius: '50px',
       fontSize: '14px',
       cursor: 'pointer',
       marginBottom: '8px',
@@ -287,7 +288,7 @@
       background: 'rgba(0,0,0,0.8)',
       color: '#fff',
       padding: '10px 20px',
-      borderRadius: '8px',
+      borderRadius: '50px',
       fontSize: '14px',
       zIndex: '2147483647',
     })
