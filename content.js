@@ -212,7 +212,7 @@
     Object.assign(openBtn.style, {
       width: '100%',
       padding: '10px',
-      background: '#2196F3',
+      background: 'rgba(120, 56, 255, 1)',
       color: '#fff',
       border: 'none',
       borderRadius: '50px',
